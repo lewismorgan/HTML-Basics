@@ -1,15 +1,26 @@
+/* Created by Lewis Morgan for USF's ISM4300 course */
 /** CSS styling for the customer input form **/
+
 /* I tried to avoid using as much px usage as possible to make it compatible with any browser size. */
 
 body {
   font-family: "Open Sans", sans-serif;
   background-color: rgb(129, 129, 129);
+  margin: 10px;
 }
 
 h1 {
   display: flex;
   justify-content: center;
   color: rgb(88, 41, 47);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* background: red; */
+  align-items: center;
+  margin: 10px;
 }
 
 /* Contains the form for customer info */
@@ -21,6 +32,9 @@ h1 {
   border: black;
   border-style: ridge;
   border-radius: 1.25rem;
+  max-width: 625px;
+  /* Forces it to fill full width browser allows */
+  width: 100%;
 }
 
 /* Customer Form Styling */

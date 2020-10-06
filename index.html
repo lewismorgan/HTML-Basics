@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<!-- Created by Lewis Morgan for USF's ISM4300 course -->
 <html>
   <head>
     <title>Lewis Morgan & Co.</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Add font family from Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
@@ -15,56 +17,60 @@
       <!-- Displayed at the top of the website -->
       <h1>Lewis Morgan & Co. - Customer Info.</h1>
     </header>
-    <div class="customerContainer">
-      <!-- Form to collect information -->
-      <form class="customerForm">
-        <!-- The form contains 3 inputs: First name, last name, email address with a styling class applied to each -->
-        <!-- Input for the first name of the customer (at least 3) -->
-        <div class="customerInput">
-          <label for="firstName">First Name</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            title="First name of the customer"
-            placeholder="Obi-Wan"
-            required
-            minlength="3"
-            tabindex="1"
-          />
-        </div>
-        <!-- Input for the last name (at least 3 chars) -->
-        <div class="customerInput">
-          <label for="lastName">Last Name</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            title="Last name of the customer"
-            placeholder="Kenobi"
-            required
-            minlength="3"
-            tabindex="2"
-          />
-        </div>
-        <!-- Input for the email address of the customer -->
-        <div class="customerInput">
-          <label for="email">Email Address</label>
-          <input
-            type="email"
-            id="emailAddr"
-            name="emailAddr"
-            title="Email address of the customer"
-            placeholder="obi@kenobi.com"
-            required
-            tabindex="3"
-          />
-        </div>
-        <div class="customerBtn">
-          <!-- Submission button, Input type of submit allows for validation -->
-          <input type="submit" value="Submit Data" tabindex="4" />
-        </div>
-      </form>
+    <div class="container">
+      <!-- Wrapper container around the whole form for easy styling -->
+      <div class="customerContainer">
+        <!-- Form to collect customer information -->
+        <form class="customerForm">
+          <!-- Each input uses a customerInput div container for equal styling of content -->
+          <!-- Input for the first name of the customer (at least 3) -->
+          <div class="customerInput">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              title="First name of the customer"
+              placeholder="Obi-Wan"
+              required
+              minlength="3"
+              tabindex="1"
+            />
+          </div>
+          <!-- Input for the last name (at least 3 chars) -->
+          <div class="customerInput">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              title="Last name of the customer"
+              placeholder="Kenobi"
+              required
+              minlength="3"
+              tabindex="2"
+            />
+          </div>
+          <!-- Input for the email address of the customer -->
+          <div class="customerInput">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="emailAddr"
+              name="emailAddr"
+              title="Email address of the customer"
+              placeholder="obi@kenobi.com"
+              required
+              tabindex="3"
+            />
+          </div>
+          <!-- Create a wrapper around the button to contain styling -->
+          <div class="customerBtn">
+            <!-- Submission button, Input type of submit allows for validation -->
+            <input type="submit" value="Submit Data" tabindex="4" />
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
