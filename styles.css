@@ -1,0 +1,60 @@
+/** CSS styling for the customer input form **/
+/* I tried to avoid using as much px usage as possible to make it compatible with any browser size. */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(129, 129, 129);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(88, 41, 47);
+}
+
+/* Contains the form for customer info */
+.customerContainer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  border: black;
+  border-style: ridge;
+  border-radius: 1.25rem;
+}
+
+/* Customer Form Styling */
+.customerForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 18px;
+}
+
+/* Customer Input field containers */
+.customerInput {
+  display: flex;
+  flex-direction: column;
+  margin: 0.69rem;
+}
+
+/** Styles the input tag for the input fields within the customerInput div **/
+.customerInput input {
+  margin-top: 0.5rem;
+  height: 1.5rem;
+}
+
+/** Styles the container for the Submit button **/
+.customerBtn {
+  display: flex;
+  /* Position at the end of the container */
+  justify-content: flex-end;
+}
+
+/** Styles the actual button **/
+.customerBtn input {
+  /* Use the same margin as the input container to line up the button */
+  margin: 0.69rem;
+  width: 125px;
+  height: 30px;
+}
