@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="validate.js"></script>
   </head>
 
   <body>
@@ -22,7 +23,7 @@
         <!-- Wrapper container around the whole form for easy styling -->
         <div class="customerContainer">
           <!-- Form to collect customer information -->
-          <form class="customerForm">
+          <form name="customerForm" class="customerForm" onsubmit="return validateForm()">
             <!-- Each input uses a customerInput div container for equal styling of content -->
             <!-- Input for the first name of the customer (at least 3) -->
             <div class="customerInput">
@@ -33,7 +34,6 @@
                 name="firstName"
                 title="First name of the customer"
                 placeholder="Obi-Wan"
-                required
                 minlength="3"
                 tabindex="1"
               />
@@ -47,7 +47,6 @@
                 name="lastName"
                 title="Last name of the customer"
                 placeholder="Kenobi"
-                required
                 minlength="3"
                 tabindex="2"
               />
@@ -61,7 +60,6 @@
                 name="emailAddr"
                 title="Email address of the customer"
                 placeholder="obi@kenobi.com"
-                required
                 tabindex="3"
               />
             </div>
